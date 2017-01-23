@@ -1,0 +1,59 @@
+.stock-card {
+    display: block;
+    margin: 3em;
+    padding: 20px 16px 24px 16px;
+
+    height: 494px;
+    width: 632px;
+
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+}
+.name, .symbol, .currency, .details  {
+    color: #878787;
+}
+.name {
+    font-size: 24px;
+}
+.symbol {
+    line-height: 19px;
+}
+div.price {
+    margin: 10px 0;
+}
+.details {
+  font-size: 13px;
+}
+.details div {
+  display: inline-block;
+}
+.details td {
+  width: 30%;
+}
+.details .firstColumn {
+  width: 47%;
+}
+span.price {
+    color: #222;
+    font-size: 29px;
+    line-height: 35px;
+}
+span.currency {
+    font-size: 13px;
+}
+.increaseDecrease {
+    color: #3d9400;
+    font-size: 24px;
+    position: relative;
+}
+.increaseDecrease {
+    background-image: url(../images/upArrow.svg);
+    background-repeat: no-repeat;
+    padding-left: 25px;
+}
+.increaseDecrease.decrease {
+    color: #dd4b39;
+}
+.increaseDecrease.decrease {
+    background-image: url(../images/downArrow.svg);
+}

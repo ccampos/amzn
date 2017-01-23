@@ -1,0 +1,48 @@
+<div class='stock-card'>
+    <!-- POSTPONED
+    <div class='stock-search'>
+        <stock-search></stock-search>
+    </div>
+    -->
+
+    <div class='name'>{{name}}</div>
+    <div class='symbol'>
+        <span class='uppercase'>{{stockExchange}}:</span>
+        <span class='uppercase'>{{symbol}}</span> -
+        <span>{{lastTradeDateTime}}</span>
+        <span>{{timeZone}}</span>
+    </div>
+    <div class='price'>
+        <span class='price'>{{lastTradePriceOnly | absoluteValueFixed}}</span>
+        <span class='currency'>USD</span>
+        <span class='increaseDecrease' ng-class='{decrease:
+        changeDecimal < 0}'><img class='arrow'>{{changeDecimal | absoluteValueFixed}}
+        ({{changePercentage | absoluteValueFixed}}&#37;)</span>
+        <span>{{previousClose}}</span>
+    </div>
+
+    <div class='line-chart'>
+        <line-chart></line-chart>
+    </div>
+
+    <div class='details'>
+      <div class='firstColumn'>
+        <table>
+          <tbody>
+            <tr><td>Open</td><td>809.50</td></tr>
+            <tr><td>High</td><td>811.73</td></tr>
+            <tr><td>Low</td><td>804.27</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class='secondColumn'>
+        <table>
+          <tbody>
+            <tr><td>Mkt cap</td><td>383.35B</td></tr>
+            <tr><td>P/E ratio</td><td>184.85</td></tr>
+            <tr><td>Div yield</td><td>-</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+</div>

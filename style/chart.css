@@ -1,0 +1,68 @@
+div.line-chart {
+    margin: 0 0 0 0;
+}
+svg {
+    font-size: small;
+    padding-left: 41px;
+    padding-right: 41px;
+}
+svg g.axis {
+    fill: none;
+    stroke: #ababab;
+    stroke-width: 1;
+}
+svg text {
+    cursor: default;
+    fill: #ababab;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+svg path.path {
+    fill: none;
+    stroke: #4b86ee;
+    stroke-width: 3;
+}
+svg path.domain {
+    fill: none;
+    stroke: #f1f1f1;
+    stroke-width: 1;
+}
+.interactiveLine {
+    fill: none;
+    stroke: #bbb;
+    stroke-dasharray: 1;
+    stroke-width: 1;
+}
+.interactiveTriangle {
+    fill: #f1f1f1;
+    stroke: #e5e5e5;
+}
+.interactiveCircle {
+    fill: #4b86ee;
+}
+.interactiveRectangle {
+    fill: #f1f1f1;
+    stroke: #e5e5e5;
+    stroke-width: 1px;
+}
+.interactiveText {
+    font-size: 13px;
+    letter-spacing: normal;
+}
+.interactiveText.stockValue {
+    font-weight: bold;
+}
+.interactiveText.date {
+    fill: #757575;
+}
+
+svg g,
+svg.text,
+svg path.path,
+svg path.domain,
+.interactiveLine,
+.interactiveCircle,
+.interactiveRectangle {
+    pointer-events: none;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="voo">
+    <head>
+        <title>Stock Analysis</title>
+        <link rel="stylesheet" href="style/main.css">
+        <link rel="stylesheet" href="style/stockCard.css">
+        <link rel="stylesheet" href="style/loadingView.css">
+        <link rel="stylesheet" href="style/chart.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    </head>
+    <body>
+        <div ng-show='loadingView' ng-include="'templates/loadingView.html'"></div>
+        <ng-view ng-show='!loadingView'></ng-view>
+
+        <script src="scripts/lib/jquery-2.1.1.js"></script>
+        <script src="scripts/lib/angular.js"></script>
+        <script src="scripts/lib/angular-route.js"></script>
+        <script src="scripts/lib/underscore.js"></script>
+        <script src="scripts/lib/moment.js"></script>
+        <script src="scripts/lib/moment-timezone.js"></script>
+        <script src="scripts/lib/d3.min.js"></script>
+        <script src="scripts/main.js"></script>
+        <script src="scripts/controllers/StockController.js"></script>
+        <script src="scripts/directives/ChartDirectiveModule.js"></script>
+        <script src="scripts/directives/StockSearchDirectiveModule.js"></script>
+        <script src="scripts/factories/stockDataFactory.js"></script>
+        <script src="scripts/filters/absoluteValueFixed.js"></script>
+    </body>
+</html>
